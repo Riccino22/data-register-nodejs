@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Register</title>
+    <%- include("partials/head.ejs") %>
+</head>
+
+<body>
+   
+    <% if(entries.length) {    %>
+
+    <%  entries.forEach(function(entry){    %>
+
+
+    <div class="container">
+        <br>
+        <center>
+            <img src="<%= entry.avatar %>" class="document" width="250"><br>
+            <br>
+            <img src="img/user.png" class="profile" width="100" alt="">
+        </center>
+        <div class="content">
+            <h3><%= entry.name %> <%= entry.lastName %></h3>
+            <li><%= entry.birth.day %>/<%= entry.birth.month %>/<%= entry.birth.year %></li>
+            <li>Age: <%= 2022 - entry.birth.year %></li>
+            <li>Cedula de Identidad: <%= entry.CI %></li>
+            <li>Email: <a href="mailto:<%= entry.email %>"><%= entry.email %></a></li>
+            <li>Tlf Number: <a href="tlf:<%= entry.tlf %>"><%= entry.tlf %></a></li>
+            <br>
+        </div>
+    </div>
+
+
+    <% }) %>
+
+
+
+    <% } else { %>
+
+    <h1>No users</h1>
+
+    <% } %>
+
+    <a href="/new"><button>NEW</button></a>
+
+</body>
+
+</html>

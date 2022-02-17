@@ -1,0 +1,96 @@
+
+a{
+    color: #ddd;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgb(139, 251, 255);
+}
+
+body{
+    background: linear-gradient(
+        to left,
+        rgb(0, 204, 255),
+        rgb(234, 0, 255)
+    );
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+button{
+    background: blue;
+    color: #fff;
+    border: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover{
+    background: rgb(153, 0, 255);
+}
+
+
+.container{
+    background-color: rgba(181, 21, 255, 0.493);
+    width: 350px;
+    border-radius: 20px;
+    border-style: solid;
+    margin-bottom: 10px;
+    border-color: rgba(255, 255, 255, 0.534);
+}
+
+.document{
+    border-radius: 10px;
+    border: rgb(0, 4, 255);
+    border-style: solid;
+}
+
+.profile{
+    border-radius: 50%;
+}
+
+.content{
+    margin-left: 10px;
+}
+
+
+.text{
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15pt;
+    font-family: sans-serif;
+}
+
+
+.birth-input{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15pt;
+    font-family: sans-serif;
+}
+
+.load-file{
+    color: #fff;
+    background-color: rgb(4, 0, 255);
+    width: 270px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-style: dashed;
+}
+
+
+.load-file:hover{
+    color: rgb(193, 246, 255);
+}

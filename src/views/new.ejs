@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New User</title>
+    <%- include("partials/head.ejs") %>
+</head>
+<body>
+   <div align="center">
+       <br>
+    <a href="/"><button>HOME</button></a>
+    <form method="POST" enctype="multipart/form-data">
+        <h1>INSERT YOUR DATAS</h1>
+        <input type="text" class="text" name="name" placeholder="name" required><br><br>
+        <input type="text" class="text" name="lastName" placeholder="last name" required><br><br>
+        <input type="text" class="text" name="CI" placeholder="CI" required><br><br>
+        <input type="text" class="text" name="email" placeholder="email" required><br><br>
+        <input type="number" class="text" name="tlf" placeholder="tlf Number" required><br><br>
+
+
+        <h2>Your Date of Birth</h2>
+
+        <input type="number" class="birth-input" name="day" min="1" max="31" placeholder="day" required>
+        <input type="number" class="birth-input" name="month" min="1" max="12" placeholder="month" required>
+        <input type="number" class="birth-input" name="year" min="1900" max="2022" placeholder="year" required>
+        <br><br>
+        <h2>identity document image</h2>
+        <input type="file" class="load-file" name="avatar" accept="image/*" required>
+        <br><br>
+
+        <button type="submit">SEND</button>
+
+    </form>
+
+  
+    </div>
+</body>
+</html>
